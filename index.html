@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <body class="p-0 m-0 box-border font-raleway relative body">
+    <span class="span absolute z-10 w-full h-full hidden bg-black/60"></span>
+    <div
+      class="bg-white mx-6 w-full max-w-[700px] hidden pb-10 absolute z-10 modal top-[100px] -right-[10px]"
+    >
+      <div class="flex items-center justify-between px-6 py-3">
+        <div class="text-lg font-semibold">Task</div>
+        <img
+          class="close_btn cursor-pointer"
+          src="images/x.svg"
+          alt="close"
+          width="14"
+          height="14"
+        />
+      </div>
+      <div class="w-full py-[0.5px] bg-gray-50"></div>
+      <div class="flex gap-26 items-center px-6 mt-6">
+        <div class="flex flex-col">
+          <span class="text-gray-300 font-medium text-xs">Qo'shildi</span>
+          <div class="text-sm font-medium text-dark">25.11.2021 / 09:24</div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-gray-300 font-medium text-xs">Deadline</span>
+          <div class="text-sm font-medium text-dark">30.11.2021 / 22:00</div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-gray-300 font-medium text-xs">Status</span>
+          <div class="text-sm font-medium text-dark flex items-center gap-1">
+            <div>Bajarilmoqda</div>
+            <img src="images/arrow_drop_down.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-26 items-center px-6 my-6">
+        <div class="flex flex-col">
+          <span class="text-gray-300 font-medium text-xs">Qo'shdi</span>
+          <a href="#" class="text-sm text-blue-200 font-medium font-medium"
+            >Muhammadjavohir Suratov</a
+          >
+        </div>
+        <div class="flex flex-col">
+          <span class="text-gray-300 font-medium text-xs">Mas'ul</span>
+          <a href="#" class="text-sm text-blue-200 font-medium font-medium"
+            >Muhammadbobur Abdulmajidov</a
+          >
+        </div>
+      </div>
+      <div class="w-full py-[0.5px] bg-gray-50"></div>
+      <p class="text-dark font-medium text-xl px-6 my-6 leading-7.5">
+        Sapien at nisi magna eu vulputate. Cursus facilisis leo sed ante egestas
+        in diam quis interdum. Gravida phasellus fermentum vel mauris
+        suspendisse enim.
+      </p>
+      <div class="w-full py-[0.5px] bg-gray-50"></div>
+      <div class="flex items-center gap-4 px-6 mt-6 mb-8 commentDiv">
+        <button class="font-semibold text-sm text-dark cursor-pointer comment">Izohlar (2)</button>
+        <button class="font-medium text-sm text-gray-300 cursor-pointer task">Task tarixi</button>
+      </div>
+      <div class="commentContent">
+        <div class="flex items-start gap-3 px-6 mb-6">
+          <div
+            class="bg-[url('/images/circle_purple.svg')] bg-contain bg-no-repeat p-[10px] text-white text-sm"
+          >
+            MS
+          </div>
+          <div>
+            <div class="flex items-center gap-1">
+              <div class="font-semibold text-sm text-dark">
+                Muhammadjavohir Suratov
+              </div>
+              <span class="font-medium text-xs text-gray-300">
+                • 27.11.2021 / 20:05</span
+              >
+            </div>
+            <p class="font-medium text-sm leading-5 pt-1.5">
+              Posuere sed rhoncus urna, cursus in elementum purus. Arcu massa amet
+              commodo quisque ridiculus tortor, libero egestas. Faucibus orci,
+              risus libero ipsum tincidunt sed pharetra duis tempor.
+            </p>
+          </div>
+        </div>
+        <div class="w-full py-[0.5px] bg-gray-50"></div>
+        <div class="flex items-start gap-3 px-6 my-6">
+          <div
+            class="bg-[url('/images/circle_pink.svg')] bg-contain bg-no-repeat p-[10px] text-white text-sm"
+          >
+            MA
+          </div>
+          <div>
+            <div class="flex items-center gap-1">
+              <div class="font-semibold text-sm text-dark">
+                Muhammadbobur Abdulmajidov
+              </div>
+              <span class="font-medium text-xs text-gray-300">
+                • 27.11.2021 / 22:05</span
+              >
+            </div>
+            <p class="font-medium text-sm leading-5 pt-1.5">
+              Viverra sagittis, at vitae consectetur faucibus ornare ultrices
+              dolor. Feugiat tempor nec id scelerisque.
+            </p>
+          </div>
+        </div>
+        <div class="w-full py-[0.5px] bg-gray-50"></div>
+        <div class="font-medium text-sm text-gray-300 px-6 my-6">
+          Izoh yozing...
+        </div>
+        <div class="w-full py-[0.5px] bg-gray-50"></div>
+      </div>
+      <div class="history hidden">
+        <div class="flex items-start justify-between px-6 mb-6">
+          <div class="font-medium text-sm">Muhammadjavohir Suratov <span class="text-gray-300">taskni yaratdi</span></div>
+          <div class="text-sm text-gray">30.11.2021 / 09:54</div>
+        </div>
+        <div class="flex items-start justify-between px-6 mb-6">
+          <div class="font-medium text-sm">Muhammadjavohir Suratov <span class="text-gray-300">taskni</span> Muhammadbobur Abdulmajidov <span class="text-gray-300">ga biriktirdi</span></div>
+          <div class="text-sm text-gray">30.11.2021 / 09:58</div>
+        </div>
+          <div class="flex items-start justify-between  px-6 my-6">
+            <div class="font-medium text-sm text-dark max-w-[517px] leading-5">
+              Muhammadbobur Abdulmajidov <span class="text-gray-300 font-medium">task statusini<span class="font-semibold">“Bajarilishi kerak” </span> dan "<span class="font-semibold text-blue-200">Bajarilmoqda</span>" ga o’zgartirdi</span>
+            </div>
+            <span class="text-sm text-gray">
+              30.11.2021 / 10:00</span
+            >
+          </div>
+          <div class="flex items-start justify-between  px-6 my-6">
+            <div class="font-medium text-sm text-dark max-w-[517px] leading-5">
+              Muhammadbobur Abdulmajidov <span class="text-gray-300 font-medium">taskga izoh yozdi: </span>Posuere sed rhoncus urna, cursus in elementum purus
+            </div>
+            <span class=" text-sm text-gray">
+              27.11.2021 / 22:05</span
+            >
+          </div>
+          <div class="flex items-start px-6 my-6 justify-between ">
+            <div class="font-medium text-sm text-dark max-w-[517px] leading-5">
+              Muhammadbobur Abdulmajidov <span class="text-gray-300 font-medium">task statusini "<span class="font-semibold text-blue-200">Bajarilmoqda</span>" dan "<span class="font-semibold text-green">Bajarildi</span>" ga o’zgartirdi</span>
+            </div>
+            <span class=" text-sm text-gray">
+               27.11.2021 / 22:05</span
+            >
+          </div>
+      </div>
+    </div>
+    <div class="">
+      <div
+        class="flex items-center bg-purple-800 border-b border-gray-borderDark"
+      >
+        <a class="w-[288px] pl-3 hidden md:block" href="#"
+          ><img
+            class="py-3"
+            width="200px"
+            src="images/logo.svg"
+            alt="EDU SYSTEM"
+        /></a>
+        <a href="index.html" class="md:hidden logo">
+          <img
+            src="images/logo-edusystem.png"
+            class="block pl-2"
+            width="40px"
+            height="40px"
+            alt=""
+          />
+        </a>
+        <div
+          class="flex justify-between pt-[18px] pb-[18px] sm:w-full items-center"
+        >
+          <form
+            class="ml-6 lg:ml-0 rounded py-2 px-3 mr-6 bg-white flex items-center sm:w-full sm:max-w-80 justify-between"
+          >
+            <input
+              class="outline-0 placeholder:text-gray-primary text-13 leading-4 placeholder:tracking-wide"
+              placeholder="Qidirish"
+              type="text"
+            />
+            <img
+              class="cursor-pointer"
+              src="images/search.svg"
+              alt="Qidirish"
+            />
+          </form>
+          <div class="flex items-center gap-4 mr-10 cursor-pointer">
+            <img src="images/profile.svg" alt="Profile" />
+            <div class="text-white text-xs font-semibold tracking-wide">
+              John Doe
+            </div>
+            <img src="images/down-arrow.svg" alt="arrowDown" />
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-6">
+        <!--SIDEBAR  -->
+        <div
+          class="col-span-1 sidebar-desktop hidden bg-purple-800 h-screen md:flex md:flex-col justify-between"
+        >
+          <div class="flex flex-col">
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/check_circle.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Tasklar</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/add_to_photos.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Lidlar</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 gap-2 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/rule.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Yo'qlama</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/person.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">
+                O’quvchilar
+              </div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/Group.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Guruhlar</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/teacher.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Ustozlar</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/archive.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Arxiv</div>
+            </button>
+            <button
+              class="flex pl-2 items-center justify-between pr-[7%] py-4 cursor-pointer focus:bg-green"
+            >
+              <div class="flex items-center gap-3">
+                <img src="images/monetization_on.svg" alt="check" />
+                <div class="text-white font-medium tracking-wider">Moliya</div>
+              </div>
+              <img src="images/down-arrow.svg" alt="arrow" />
+            </button>
+            <button
+              class="flex pl-2 items-center justify-between pr-[7%] py-4 cursor-pointer focus:bg-green"
+            >
+              <div class="flex items-center gap-4">
+                <img src="images/comment.svg" alt="check" />
+                <div class="text-white font-medium tracking-wider">
+                  Feedbacks
+                </div>
+              </div>
+              <img src="images/down-arrow.svg" alt="arrow" />
+            </button>
+          </div>
+          <button
+            class="flex text-white py-4 w-full pl-2 border-t border-gray-border items-center gap-3 focus:bg-green"
+          >
+            <img src="images/Setting.svg" alt="" />
+            Sozlamalar
+          </button>
+        </div>
+        <div
+          class="col-span-1 sidebar-mobile md:hidden block bg-purple-800 h-screen"
+        >
+          <div class="flex flex-col pl-2">
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/check_circle.svg" alt="check" />
+            </button>
+            <button
+              class="items-center py-[18px] gap-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/add_to_photos.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/rule.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/person.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[23px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/Group.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/teacher.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/archive.svg" alt="check" />
+            </button>
+            <button
+              class="items-center justify-between py-[18px] cursor-pointer focus:bg-green"
+            >
+              <div>
+                <img src="images/monetization_on.svg" alt="check" />
+              </div>
+            </button>
+            <button
+              class="items-center justify-between py-[18px] cursor-pointer focus:bg-green"
+            >
+              <div>
+                <img src="images/comment.svg" alt="check" />
+              </div>
+            </button>
+          </div>
+          <button
+            class="text-white py-4 border-t border-gray-border items-center gap-3 focus:bg-green"
+          >
+            <img src="images/Setting.svg" class="pl-2" alt="" />
+          </button>
+        </div>
+
+        <!-- TABLE -->
+        <div class="col-span-5 bg-blue-50 table">
+          <div class="flex items-center justify-between ml-30 mt-30 pb-2">
+            <div class="font-bold text-darkBlue-fontColor text-2.2xl uppercase">
+              Tasklar (152)
+            </div>
+            <img
+              class="cursor-pointer plusBtn mr-10"
+              src="images/plus.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex items-center justify-start ml-30 gap-2 text-darkBlue-fontColor"
+          >
+            <div
+              class="text-white bg-blue-200 rounded-30 py-2 px-4 text-sm font-semibold"
+            >
+              Dolzarb <span class="font-medium text-white/60"> (24)</span>
+            </div>
+            <div
+              class="border border-gray-300 py-2 px-3 text-sm bg-white rounded-30 text-purple-800"
+            >
+              Tugallangan
+              <span class="text-gray-300">(41)</span>
+            </div>
+          </div>
+          <div class="ml-30 flex items-center gap-3 my-4">
+            <span>Filter:</span>
+            <div
+              class="flex items-center gap-2 bg-gray-50 font-medium text-sm rounded-60 py-1 px-2"
+            >
+              <div>Yonmoqda</div>
+              <img src="images/x.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center gap-2 bg-gray-50 font-medium text-sm rounded-60 py-1 px-2"
+            >
+              <div>Bajarilmoqda</div>
+              <img src="images/x.svg" alt="" />
+            </div>
+          </div>
+          <div class="ml-30 mr-8 mt-3 overflow-x-auto">
+            <div class="w-[1117px]">
+              <div
+                class="bg-purple-800 py-4 pl-4 font-medium flex items-center uppercase text-white text-sm "
+              >
+                <div class="max-w-[435px] w-full">
+                  <div class="">task</div>
+                </div>
+                <div class="flex items-center gap-4 w-full max-w-[195px]">
+                  <div class="">Qo'shdi</div>
+                  <div class="flex items-center gap-2">
+                    ahamiyat
+                    <img src="images/down-arrow.svg" alt="" />
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 w-full max-w-[145px]">
+                  muddat
+                </div>
+                <div class="flex items-center gap-2 w-full max-w-[240px]">
+                  status
+                  <img src="images/down-arrow.svg" alt="" />
+                </div>
+                <div>izoh</div>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center py-2.5 pl-5"
+              >
+                <p class="w-full text-sm max-w-[382px]">
+                  2-guruhingizdagi Abbosov Farruhning darsda qatnashishi haqida
+                  ma’lumot berib yubora olasizmi?
+                </p>
+                <div
+                  class="bg-orange rounded-full py-3 px-2 text-xs font-medium leading-3 text-white"
+                >
+                  UM
+                </div>
+                <div
+                  class="bg-red-100 rounded-sm py-2.5 px-2.5 text-xs font-medium leading-3"
+                ></div>
+                <div class="py-3 px-2 text-xs font-medium leading-3">
+                  Nov 30, 22:00
+                </div>
+                <div
+                  class="py-3 px-2 text-sm font-medium w-full max-w-[193px] leading-4 flex gap-1.5 items-center"
+                >
+                  <div class="bg-blue rounded-full p-2"></div>
+                  <p>Bajarilmoqda</p>
+                  <img src="images/down_arrow-dark.svg" alt="" />
+                </div>
+                <div class="text-xs font-medium flex mr-8 gap-6 items-center">
+                  <div class="flex items-center gap-1.5">
+                    <img src="images/u_comment.svg" alt="" />
+                    <span class="font-medium">12</span>
+                  </div>
+                  <img src="images/menu.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="bg-white flex justify-between my-1 items-center py-2.5 pl-5"
+              >
+                <p class="w-full text-sm max-w-[382px]">
+                  2-guruhingizdagi Abbosov Farruhning darsda qatnashishi haqida
+                  ma’lumot berib yubora olasizmi?
+                </p>
+                <div
+                  class="bg-gray rounded-full py-3 px-2 text-xs font-medium leading-3 text-white"
+                >
+                  UM
+                </div>
+                <div
+                  class="bg-yellow rounded-sm py-2.5 px-2.5 text-xs font-medium leading-3"
+                ></div>
+                <div class="py-3 px-2 text-xs font-medium leading-3">
+                  Nov 30, 22:00
+                </div>
+                <div
+                  class="py-3 px-2 text-sm font-medium w-full max-w-[193px] leading-4 flex gap-1.5 items-center"
+                >
+                  <div class="bg-gray-400 rounded-full p-2"></div>
+                  <p>Bajarilishi kerak</p>
+                  <img src="images/down_arrow-dark.svg" alt="" />
+                </div>
+                <div class="text-xs font-medium flex mr-8 gap-6 items-center">
+                  <div class="flex items-center gap-1.5">
+                    <img src="images/u_comment.svg" alt="" />
+                    <span class="font-medium">12</span>
+                  </div>
+                  <img src="images/menu.svg" alt="" />
+                </div>
+              </div>
+
+              <div
+                class="bg-white flex justify-between items-center py-2.5 pl-5"
+              >
+                <p class="w-full text-sm max-w-[382px]">
+                  2-guruhingizdagi Abbosov Farruhning darsda qatnashishi haqida
+                  ma’lumot berib yubora olasizmi?
+                </p>
+                <div
+                  class="bg-brown rounded-full py-3 px-2 text-xs font-medium leading-3 text-white"
+                >
+                  XM
+                </div>
+                <div
+                  class="bg-blue-300 rounded-sm py-2.5 px-2.5 text-xs font-medium leading-3"
+                ></div>
+                <div class="py-3 px-2 text-xs font-medium leading-3">
+                  Nov 30, 22:00
+                </div>
+                <div
+                  class="py-3 px-2 text-sm font-medium w-full max-w-[193px] leading-4 flex gap-1.5 items-center"
+                >
+                  <div class="bg-gray-400 rounded-full p-2"></div>
+                  <p>Bajarilishi kerak</p>
+                  <img src="images/down_arrow-dark.svg" alt="" />
+                </div>
+                <div class="text-xs font-medium flex mr-8 gap-6 items-center">
+                  <div class="flex items-center gap-1.5 w-full max-w-[33px]">
+                    <img src="images/u_comment.svg" alt="" />
+                    <span class="font-medium">12</span>
+                  </div>
+                  <img src="images/menu.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center my-1 py-2.5 pl-5"
+              >
+                <p class="w-full text-sm max-w-[382px]">
+                  2-guruhingizdagi Abbosov Farruhning darsda qatnashishi haqida
+                  ma’lumot berib yubora olasizmi?
+                </p>
+                <div
+                  class="bg-red rounded-full py-3 px-2 text-xs font-medium leading-3 text-white"
+                >
+                  UM
+                </div>
+                <div
+                  class="bg-green rounded-sm py-2.5 px-2.5 text-xs font-medium leading-3"
+                ></div>
+                <div class="py-3 px-2 text-xs font-medium leading-3">
+                  Nov 30, 22:00
+                </div>
+                <div
+                  class="py-3 px-2 text-sm font-medium w-full max-w-[193px] leading-4 flex gap-1.5 items-center"
+                >
+                  <div class="bg-gray-400 rounded-full p-2"></div>
+                  <p>Bajarilishi kerak</p>
+                  <img src="images/down_arrow-dark.svg" alt="" />
+                </div>
+                <div class="text-xs font-medium flex mr-8 gap-6 items-center">
+                  <div class="flex items-center gap-1.5">
+                    <img src="images/u_comment.svg" alt="" />
+                    <span class="font-medium">12</span>
+                  </div>
+                  <img src="images/menu.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center py-2.5 pl-5"
+              >
+                <p class="w-full text-sm max-w-[382px]">
+                  2-guruhingizdagi Abbosov Farruhning darsda qatnashishi haqida
+                  ma’lumot berib yubora olasizmi?
+                </p>
+                <div
+                  class="bg-purple rounded-full py-3 px-2 text-xs font-medium leading-3 text-white"
+                >
+                  UM
+                </div>
+                <div
+                  class="bg-gray rounded-sm py-2.5 px-2.5 text-xs font-medium leading-3"
+                ></div>
+                <div class="py-3 px-2 text-xs font-medium leading-3">
+                  Nov 30, 22:00
+                </div>
+                <div
+                  class="py-3 px-2 text-sm font-medium leading-4 w-full max-w-[193px] flex gap-1.5 items-center"
+                >
+                  <div class="bg-gray-400 rounded-full p-2"></div>
+                  <p>Bajarilishi kerak</p>
+                  <img src="images/down_arrow-dark.svg" alt="" />
+                </div>
+                <div class="text-xs font-medium flex mr-8 gap-6 items-center">
+                  <div class="flex items-center gap-1.5">
+                    <img src="images/u_comment.svg" alt="" />
+                    <span class="font-medium">12</span>
+                  </div>
+                  <img src="images/menu.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center my-1 py-2.5 pl-5"
+              >
+                <p class="w-full text-sm max-w-[382px]">
+                  2-guruhingizdagi Abbosov Farruhning darsda qatnashishi haqida
+                  ma’lumot berib yubora olasizmi?
+                </p>
+                <div
+                  class="bg-orange rounded-full py-3 px-2 text-xs font-medium leading-3 text-white"
+                >
+                  MG
+                </div>
+                <div
+                  class="bg-red-100 rounded-sm py-2.5 px-2.5 text-xs font-medium leading-3"
+                ></div>
+                <div class="py-3 px-2 text-xs font-medium leading-3">
+                  Nov 30, 22:00
+                </div>
+                <div
+                  class="py-3 px-2 text-sm font-medium w-full max-w-[193px] leading-4 flex gap-1.5 items-center"
+                >
+                  <div class="bg-gray-400 rounded-full p-2"></div>
+                  <p>Bajarilishi kutilmoqda</p>
+                  <img src="images/down_arrow-dark.svg" alt="" />
+                </div>
+                <div class="text-xs font-medium flex mr-8 gap-6 items-center">
+                  <div class="flex items-center gap-1.5">
+                    <img src="images/u_comment.svg" alt="" />
+                    <span class="font-medium">12</span>
+                  </div>
+                  <img src="images/menu.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 flex justify-end mr-4">
+            <div class="flex items-center gap-1">
+              1-30
+              <span class="text-gray">of 150</span>
+              <div class="mx-4">
+                <img src="images/arrow__right.svg" alt="" />
+              </div>
+              <div><img src="images/arrow__left.svg" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hidden modal -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+              padding: "1rem",
+              screens: {
+                sm: "1216px",
+              },
+            },
+            gap: {
+              26: "104px",
+            },
+            padding: {
+              30: "30px",
+              60: "60px",
+            },
+            margin: {
+              30: "30px",
+            },
+            borderRadius: {
+              30: "30px",
+              60: "60px",
+            },
+            colors: {
+              red: {
+                DEFAULT: "#FF5555",
+                100: "#FF5454",
+              },
+              yellow: {
+                DEFAULT: "#EFE83B",
+              },
+              brown: {
+                DEFAULT: "#BC8F5B",
+              },
+              purple: {
+                DEFAULT: "#9032DB",
+                800: "#0D1523",
+              },
+              blue: {
+                DEFAULT: "#6786F0",
+                50: "#EBEEF3",
+                100: "#E6F4FF",
+                200: "#065FD4",
+                300: "#54C1FF",
+              },
+              orange: {
+                DEFAULT: "#EDB447",
+              },
+              green: {
+                DEFAULT: "#49BE6A",
+              },
+              primary: {
+                DEFAULT: "#122349",
+              },
+              dark: {
+                DEFAULT: "#263145",
+                100: "#323232",
+                200: "#3D444F",
+                300: "#111111",
+              },
+              gray: {
+                DEFAULT: "#808080",
+                50: "#cfd0d3",
+                100: "#CCCCCC",
+                200: "#999999",
+                300: "#6E737B",
+                400: "#9EA1A7",
+              },
+            },
+            lineHeight: {
+              120: "120%",
+              130: "130%",
+              140: "140%",
+              7.5: "30px",
+            },
+            fontSize: {
+              xxs: "13px",
+              "2.5xl": "28px",
+              "2.2xl": "22px",
+              "3.5xl": "32px",
+            },
+            fontFamily: {
+              raleway: "'Raleway', sans-serif;",
+            },
+            zIndex: {
+              1: "1",
+              2: "2",
+              3: "3",
+              4: "4",
+              5: "5",
+              6: "6",
+              7: "7",
+              8: "8",
+              9: "9",
+              11: "11",
+              12: "12",
+              13: "13",
+              14: "14",
+              15: "15",
+              16: "16",
+              17: "17",
+              18: "18",
+              19: "19",
+              21: "21",
+              22: "22",
+              23: "23",
+              24: "24",
+              25: "25",
+              26: "26",
+              27: "27",
+              28: "28",
+              29: "29",
+              40: "40",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
